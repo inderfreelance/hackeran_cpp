@@ -5,10 +5,27 @@
 
 using namespace std;
 
+// defining a for loop once 
+#define for_loop(upper_lim,act_arr) for(int i=0;i<upper_lim;i++)
+
 int max_of_four(int a,int b,int c,int d){
     int arr[] = {a , b, c, d };
     //part of std max_element
     // int* place_holder;
+
+    int count = 0;
+
+    cout << sizeof(arr[0]);
+
+
+
+    // why it runs 16 times https://www.educative.io/edpresso/how-to-find-the-length-of-an-array-in-cpp
+    for_loop(sizeof(arr),arr){
+    
+        cout << "I RAN " << count << endl;
+        count+=1;
+    }
+
     int n = sizeof(arr) / sizeof(arr[0]);
 
     // place_holder =  max(arr);

@@ -5,6 +5,7 @@ using namespace std;
 
 map<int,string>my_map;
 
+map<int,int>other_map;
 int main()
 {
     int n;
@@ -20,16 +21,24 @@ int main()
     my_map[8]="eight";
     my_map[9]="nine";
 
-    if (n <= 9){
-        for (auto item : my_map){
-            if (item.first == n){
-                cout << item.second;
-            };
-        };
-    }
-    else {
-        cout <<"Greater than 9";
-    }
+
+    other_map[90]=22; 
+    cout << "This is the value of n ::: " << n << endl;
+
+
+    cout << "This is the value of n ::: " << my_map[90] << endl;
+
+    // if (n <= 9){
+    //     for (auto item : my_map){
+    //         cout << item.first << endl;
+    //         if (item.first == n){
+    //             cout << item.second << endl;
+    //         };
+    //     };
+    // }
+    // else {
+    //     cout <<"Greater than 9";
+    // }
 
     return 0;
 }
